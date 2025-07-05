@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="" />
+  <meta name="sitedomain" content="https://github.com/Johandry-M6B/Interactive-Messaging-System" />
+  <meta name="organization" content="Johandry-M6B" />
+  <meta name="author" content="Johandry de Jesus Julio Rodriguez" />
+  <meta name="designer" content="Johandry-M6B" />
+
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Full</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h1>Store of Snekers</h1>
+    <br>
+    <section id="formulario">
+      <div class="container">
+
+
+        <label for="name">Please, enter your name</label>
+        <input type="text" id="name" placeholder="Full Name" oninput="onlyLetter(this)" />
+        <br>
+
+        <label for="name">Enter priece</label>
+        <input type="number" id="priece" placeholder="Priece" oninput="onlyNumbers(this)" />
+        <br>
+
+        <label for="name">Enter quantity</label>
+        <input type="number" id="quantity" placeholder="Quantity" oninput="onlyNumbers(this)" />
+        <br>
+
+        <button id="btnsave">Save</button>
+      </div>
+    </section>
+
+    <section id="table">
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Priece</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody id="table-products">
+
+          </tbody>
+        </table>
+
+      </div>
+
+    </section>
+
+
+  </main>
+  <footer></footer>
+
+  <script src="./src/JS/main.js" type="module"></script>
+</body>
+
+</html>
